@@ -38,6 +38,9 @@ class Factura(BaseModel):
     cliente: dict
     items: list
 
+class enviar(BaseModel):
+    id:str
+
 @app.get('/')
 def read_root():
     return {"Welcome": "Bienvenidos a envios API"}

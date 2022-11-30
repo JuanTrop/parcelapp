@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MainService {
 
-  private url = "https://enviosparcial.herokuapp.com/";
+  private url = "https://farcelapp.herokuapp.com/";
 
   options = {
       headers: { "Access-Control-Allow-Origin": "*/*", "cors":"none", "accept": "application/json"},   
@@ -14,7 +14,7 @@ export class MainService {
 
   constructor(private http: HttpClient) { }
 
-  enviar() {
+  cliente() {
     return this.http.get<any>(this.url+"enviar", this.options);
   }
   paquete(paquete:any) {
