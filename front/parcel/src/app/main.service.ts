@@ -14,7 +14,7 @@ export class MainService {
 
   constructor(private http: HttpClient) { }
 
-  cliente() {
+  enviar() {
     return this.http.get<any>(this.url+"cliente", this.options);
   }
   paquete(paquete:any) {
